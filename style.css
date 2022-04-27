@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-container {
+    color: #f1dbdf;
+    font-size: 20px;
+    background-color: #525e75;
+    /*1valor:top/button 2do valor right/left*/
+    padding: 20px 0;
+    display: flex;
+    /*justify-content: center;*/
+    /*justify-center*/
+    justify-content: flex-end;
+}
+
+.nav {
+    border: solid 1px #f1dbdf;
+    width: 40%;
+    border: solid black;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: space-around;
+    border: solid black;
+}
+
+/*estilos seccion sociales*/
+
+.section-container {
+    color: #525e75;
+    background-color: #f1dbdf;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    width: 80%;
+    height: 250px;
+    display: flex;
+    /*horizontalmente*/
+    justify-content: space-between;
+    /*verticalmente*/
+    /*justify-content: center;*/
+    align-items: center;
+
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    width: 50%;
+    display: flex;
+    /*flex start que arranque desde el inicio, mano izquierda si utilizo justify-content center; me los centra todos*/
+    justify-content: flex-start;
+    /*se utiliza cuando el contenedor se desborda, no lo permite*/
+    flex-wrap: wrap;
+
+    /*direccion*/
+    /*me alinea los elementos en columnas, se utiliza mas que nada para movil en response*/
+    /*flex-direction: column;*/
+    /*row es colocar elementos en forma de filas*/
+    flex-direction: row;
+}
+
+/*propiedad order, esta propiedad se utiliza muy poco*/
+
+.item-1{
+    /*ese item se va a ir a la derecha*/
+    order: 1;
+}
+
+.item-5{
+    /*ese item se va a ir a la izquierda*/
+    order: -1;
+}
+
+/*estilos footer*/
+
+.footer-container{
+    color: #f1dbdf;
+    background-color: #525e75;
+    display: flex;
+    /*llevar el logo a la izquierda y la lista a la derecha*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-footer{
+    width: 30%;
+    /*border: solid 1px #f1ddbf*/
+
+}
+
+.lista-footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo{
+    padding-left: 10px;
+}
